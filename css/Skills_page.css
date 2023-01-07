@@ -1,0 +1,103 @@
+.content{
+    width: 50%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #1f1f1f solid 1px;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.image{
+    width: 50%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.informations, .ranks{
+    width: 100%;
+}
+
+.informations .title, .ranks .title{
+    width: 100%;
+    color: white;
+    background-color: #1f1f1f;
+}
+
+.informations .description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: #1f1f1f solid 1px;
+    padding: 10px;
+}
+
+
+.informations .description span{
+    width: 50%;
+    padding: 10px;
+}
+
+.ranks{
+    display: flex;
+    flex-direction: column;
+}
+
+.ranks span{
+    padding: 10px;
+}
+
+.ranks-group{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.level,.skillname{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: #1f1f1f solid 1px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.ranks .description{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    padding: 10px;
+    border: #1f1f1f solid 1px;
+}
+
+@media screen and (max-width:900px) {
+    .content{
+        width: 95%;
+    }
+}

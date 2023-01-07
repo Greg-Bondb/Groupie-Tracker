@@ -1,0 +1,72 @@
+.content{
+    width: 50%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #1f1f1f solid 1px;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.image{
+    width: 100%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.informations, .locations, .weaknesses, .rewards{
+    width: 100%;
+}
+
+.informations .title, .locations .title, .weaknesses .title, .rewards .title{
+    width: 100%;
+    color: white;
+    background-color: #1f1f1f;
+}
+
+.informations .species, .informations .type,.informations .elements,.informations .description, .rewards .name,.rewards .description{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: #1f1f1f solid 1px;
+    padding: 10px;
+}
+
+.informations .species span, .informations .type span, .informations .elements span, .informations .description span,.weaknesses .element span, .weaknesses .stars span, .rewards .name span,.rewards .rarity span, .rewards .value span, .rewards .description span, .locations .zonecount span, .locations .name span{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.location-group,.weaknesses-group, .rewards-group{
+    width: 100%;
+    display: flex;
+    border: #1f1f1f solid 1px;
+}
+
+.locations .zonecount, .locations .name, .weaknesses .element,.weaknesses .stars, .rewards-group .rarity, .rewards-group .value{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.locations .name, .weaknesses .stars, .rewards-group .value{
+    border-left: #1f1f1f solid 1px;
+}
+
+@media screen and (max-width:900px) {
+    .content{
+        width: 95%;
+    }
+}

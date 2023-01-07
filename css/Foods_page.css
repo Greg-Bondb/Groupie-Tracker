@@ -1,0 +1,83 @@
+.content{
+    width: 50%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #1f1f1f solid 1px;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.image{
+    width: 50%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.informations, .recovery,.protection{
+    width: 100%;
+}
+
+.informations .title, .recovery .title, .protection .title{
+    width: 100%;
+    color: white;
+    background-color: #1f1f1f;
+}
+
+.informations .value, .informations .rarity, .informations .description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: #1f1f1f solid 1px;
+    padding: 10px;
+}
+
+
+.informations .value span,.informations .rarity span,  .informations .description span{
+    width: 50%;
+    padding: 10px;
+}
+
+.recovery-group,.protection-group{
+    width: 100%;
+    display: flex;
+}
+
+
+.recovery-group .action, .recovery-group .items,.protection-group .item,.protection-group .name{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border: #1f1f1f solid 1px;
+    padding: 10px;
+}
+
+.protection .description{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: #1f1f1f solid 1px;
+    padding: 10px;
+}
+
+.recovery span, .protection span{
+    padding: 10px;
+}
+
+@media screen and (max-width:900px) {
+    .content{
+        width: 95%;
+    }
+}
+

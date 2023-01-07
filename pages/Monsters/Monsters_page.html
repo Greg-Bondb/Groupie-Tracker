@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/Monsters_page.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../photos/logo/logo.png" />
+    <title>Monsters</title>
+    <script src="https://kit.fontawesome.com/157324e58a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-----------------------navbar----------------------->
+    <header class="header">
+        <nav>
+            <div class="header-logo">
+                <a href="/"><img src="../../pictures/logo/logo.png" alt="logo"></a>
+            </div>
+            <div class="burger">
+                <span></span>
+            </div>
+            <div class="header-navbar">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/search_monsters">Monsters</a></li>
+                    <li><a href="/search_weapons">Weapons</a></li>
+                    <li><a href="/search_armors">Armors</a></li>
+                    <li><a href="/search_foods">Foods</a></li>
+                    <li><a href="/search_skills">Skills</a></li>
+                    <li><a href="/search_items">Items</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-----------------------content----------------------->
+    <section class="content">
+        <div class="title">
+            <h1>{{.Name}}</h1>
+        </div>
+        <div class="image">
+            <img src="{{.Url}}" alt="{{.Name}}">
+        </div>
+        <div class="informations">
+            <div class="title">
+                <h1>Description</h1>
+            </div>
+            <div class="species">
+                <span>Species</span>
+                <span>{{.Species}}</span>
+            </div>
+            <div class="type">
+                <span>Type</span>
+                <span>{{.Type}}</span>
+            </div>
+            <div class="elements">
+                <span>Elements</span>
+                <span>{{.Elements}}</span>
+            </div>
+            <div class="description">
+                <span>Description</span>
+                <span>{{.Description}}</span>
+            </div>
+        </div>
+        <div class="weaknesses">
+            <div class="title">
+                <h1>Weaknesses</h1>
+            </div>
+        {{range .Weaknesses}}
+            <div class="weaknesses-group">
+                <div class="element">
+                    <span>Element</span>
+                    <span>{{.Element}}</span>
+                </div>
+                <div class="stars">
+                    <span>Stars</span>
+                    <span>{{.Stars}}</span>
+                </div>
+            </div>
+        {{end}}
+        </div>
+        <div class="rewards">
+            <div class="title">
+                <h1>Rewards</h1>
+            </div>
+        {{range .Rewards}}
+            <div class="name">
+                <span>Name</span>
+                <span>{{.Name}}</span>
+            </div>
+            <div class="rewards-group">
+                <div class="rarity">
+                    <span>Rarity</span>
+                    <span>{{.Rarity}}</span>
+                </div>
+                <div class="value">
+                    <span>Value</span>
+                    <span>{{.Value}}</span>
+                </div>
+            </div>
+            <div class="description">
+                <span>Description</span>
+                <span>{{.Description}}</span>
+            </div>
+        {{end}}
+        </div>
+        <div class="locations">
+            <div class="title">
+                <h1>Locations</h1>
+            </div>
+        {{range .Locations}}
+            <div class="location-group">
+                <div class="zonecount">
+                    <span>ZoneCount</span>
+                    <span>{{.ZoneCount}}</span>
+                </div>
+                <div class="name">
+                    <span>Name</span>
+                    <span>{{.Name}}</span>
+                </div>
+            </div>
+        {{end}}
+        </div>
+    </section>
+
+    <!-----------------------footer----------------------->
+    <footer>
+        <div class="footer-up">
+            <div class="footer-up-logotext">
+                <a href="/"><img src="../../pictures/logo/icon.png" alt="icon"></a>
+                <div class="footer-up-logotext-text">
+                    <h5>MHDW.fr</h5>
+                    <span>Le repertoire de Monster Hunter World</span>
+                </div>
+            </div>
+            <div class="footer-dark-mode">
+                <div class="header-logo-s">
+                    <img id="logo-white" src="../../pictures/logo/White.png" alt="white logo">
+                    <img id="logo-dark" src="../../pictures/logo/Black.png" alt="black logo">
+                </div>
+                <div class="container">
+                    <div class="jumbotron">
+                        <input class="btn btn-primary btn-lg" type="checkbox" id="theme-toggle" role="button">
+                    </div>
+                </div>  
+            </div>
+            <div class="footer-up-beta">
+                <a href="https://www.monsterhunterworld.com/" target="_blank"><img src="../../pictures/logo/lien.png" alt="lien site officiel"></a>
+            </div>
+        </div>
+
+        <div class="footer-down">
+            <div class="footer-down-copy-right">
+                <a href="#">MHDW.FR</a> 2022   |   ALL RIGHTS RESERVED
+                <p>YOU ARE FREE TO USE THE INFORMATION/IMAGES ON THE SITE, TO MODIFY IT BUT PLEASE WE ASK YOU TO CITE US.</p>
+            </div>
+            <div class="footer-down-info">
+                <ul>
+                    <li><a href="/">Home</a><a href="/search_monsters">Monsters</a><a href="/search_weapons">Weapons</a><a href="/search_armors">Armors</a><a href="search_foods">Foods</a><a href="search_skills">Skills</a><a href="search_items">Items</a></li>
+                    <li>CRÉDITS MHDW.FR</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

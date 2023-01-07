@@ -1,0 +1,68 @@
+.content {
+    margin: 25px 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .title h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.barsearch{
+    width: 60%;
+    margin: 30px 0;
+}
+
+.input{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border: #1f1f1f solid 3px;
+    border-radius: 15px;
+    color: #1f1f1f;
+    padding: 10px;
+}
+
+.input::placeholder{
+    color: #1f1f1f;
+    margin-left: 10px;
+}
+
+ul.list {
+    width: 100%;
+}
+
+.list li {
+    border: #1f1f1f solid 1px;
+    background-color: white;
+    width: 100%;
+}
+
+.list li:hover{
+    background-color: #818181;
+    color: white;
+}
+
+.list li:hover a {
+    color: white;
+}
+
+.list li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1f1f1f;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.list li a img{
+    width: 30px;
+    margin-right: 15px;
+}

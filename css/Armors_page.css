@@ -1,0 +1,84 @@
+.content{
+    width: 50%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.image img{
+    width: 35%;
+}
+
+.informations, .defense,.resistances{
+    width: 100%;
+}
+
+.informations .title, .defense .title,.resistances .title{
+    width: 100%;
+    color: white;
+    background-color: #1f1f1f;
+}
+
+.informations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: #1f1f1f solid 1px;
+}
+
+.description-group, .defense-group, .resistances-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.defense-group{
+    flex-direction: column;
+}
+
+.resistances-group{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.up{
+    display: flex;
+}
+
+
+.type,.rarity,.base,.max, .augmented,.fire,.water,.ice,.thunder,.dragon{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: #1f1f1f solid 1px;
+}
+
+.augmented{
+    width: 100%;
+}
+
+@media screen and (max-width:900px){
+    .content{
+        width: 95%;
+    }
+}

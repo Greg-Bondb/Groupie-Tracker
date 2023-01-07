@@ -1,0 +1,110 @@
+/*-----------------contenu----------------------*/
+
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content span{
+  font-family: 'Bebas Neue', cursive;
+  margin: 25px 0;
+  font-size: 30px;
+}
+
+.group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.group-left{
+  width: 50%;
+  text-align: center;
+}
+
+.group-right{
+  width: 50%;
+}
+
+.group-left-weapons,.group-left-monsters,.group-left-skills,.group-right-armors,.group-right-foods,.group-right-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.group-left-weapons a{
+  display: block;
+  width: 90%;
+  height: 200px;
+  background: url("../pictures/home/weapons.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.group-left-monsters a{
+  display: block;
+  width: 90%;
+  height: 200px;
+  background: url("../pictures/home/monsters.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.group-left-skills a{
+  display: block;
+  width: 90%;
+  height: 200px;
+  background: url("../pictures/home/skills.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.group-right-armors a{
+  display: block;
+  width: 90%;
+  height: 200px;
+  background: url("../pictures/home/armors.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.group-right-foods a{
+  display: block;
+  width: 90%;
+  height: 200px;
+  background: url("../pictures/home/foods.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.group-right-items a{
+  display: block;
+  width: 90%;
+  height: 200px;
+  background: url("../pictures/home/items.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width:768px) {
+  .group{
+    flex-direction: column;
+  }
+  .group-left,.group-right{
+    width: 90%;
+  }
+}
+
