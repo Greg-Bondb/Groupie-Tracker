@@ -1,6 +1,6 @@
 # 📢 Groupie-Tracker
 
-The Groupie-Tracker project consists of using an API hosted on github to complete a web page on a subject.
+The Groupie-Tracker project consists of using an API hosted on github to complete a web page on a subject. A good training to discover REST API calls and manage a dynamic site.
 
 ## 💻 Technologies used
 <div>
